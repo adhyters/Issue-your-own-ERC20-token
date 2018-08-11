@@ -1,17 +1,17 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'TVZ' token contract
+// '0Fucks' token contract
 //
-// Deployed to : 0xFd76b0Ccd51A82df8dFA5c90627f36ce05848160
-// Symbol      : TVZ
-// Name        : Trevizo Coin
-// Total supply: 900000000000
-// Decimals    : 0
+// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
+// Symbol      : 0FUCKS
+// Name        : 0 Fucks Token
+// Total supply: 100000000
+// Decimals    : 18
 //
 // Enjoy.
 //
-// (c) by Tomi Aditia TAWD 2017. The MIT Licence.
+// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract Trevizo Coin is ERC20Interface, Owned, SafeMath {
+contract FucksToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract Trevizo Coin is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function Trevizo Coin() public {
-        symbol = "TVZ";
-        name = "Trevizo Coin";
-        decimals = 0;
-        _totalSupply = 900000000000;
-        balances[0xFd76b0Ccd51A82df8dFA5c90627f36ce05848160] = _totalSupply;
-        Transfer(address(0), 0xFd76b0Ccd51A82df8dFA5c90627f36ce05848160, _totalSupply);
+    function FucksToken() public {
+        symbol = "0FUCKS";
+        name = "0 Fucks Token";
+        decimals = 18;
+        _totalSupply = 100000000000000000000000000;
+        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
+        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
     }
 
 
